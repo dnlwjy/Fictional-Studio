@@ -13,23 +13,37 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        ::-moz-selection { /* Code for Firefox */
+          color: #0B0B0D;
+          background: #FCDC00;
+        }
+        
+        ::selection {
+          color: #0B0B0D;
+          background: #FCDC00;
+        }
+        </style>
 </head>
 
 <body class="bg-[#0B0B0D] font-sans leading-normal tracking-normal mt-12">
 
-<header class="flex-col z-20 w-full text-center top-0 left-0 h-fit space-y-[0px] fixed">
+<header class="flex-col z-20 w-full top-0 left-0 h-fit fixed">
     
-    <a href="#" aria-label="Promo" class="bg-[#FCDC00] h-[40px] w-full text-[16px] flex items-center justify-center text-center uppercase font-[Bold] tracking-widest">Promo available now</a>
+    <a href="#" aria-label="Promo" class="bg-gradient-to-r from-[#ffc124] to-[#FCDC00] h-[40px] w-full text-[16px] flex items-center justify-center text-center uppercase font-[Bold] tracking-widest">
+        Promo available now
+    </a>
     
-    <nav aria-label="menu nav" class="bg-[#0B0B0D] h-[88px] w-full px-10 relative flex flex-wrap justify-between items-center">
-        <a href="#" aria-label="Home">
+    <nav aria-label="menu nav" class="bg-[#0B0B0D] h-[88px] w-full px-10 flex flex-wrap justify-between items-center">
+        <a href="index.html" aria-label="Home">
             <img src="logo.png" alt="Rockstealth Studio Logo" class="h-[48px] pointer-events-none select-none">
         </a>
         <ul class="text-white flex space-x-8 text-[14px] uppercase font-[Bold] tracking-widest">
-            <li><a href="#" class="hover:text-[#FCDC00]">Home</a></li>
-            <li><a href="#" class="hover:text-[#FCDC00]">About</a></li>
-            <li><a href="#" class="hover:text-[#FCDC00]">Services</a></li>
-            <li><a href="#" class="hover:text-[#FCDC00]">Contact</a></li>
+            <li><a href="#" class="hover:text-[#FCDC00] duration-300">Home</a></li>
+            <li><a href="#" class="hover:text-[#FCDC00] duration-300">About</a></li>
+            <li><a href="#" class="hover:text-[#FCDC00] duration-300">Services</a></li>
+            <li><a href="#" class="hover:text-[#FCDC00] duration-300">Contact</a></li>
         </ul>
     </nav>
 
@@ -51,16 +65,20 @@
             <p>Rockstealth is an immersive studio that leverages visual, technology, and storytelling to create wonder and drive human connection.</p>
         </div>
         
-        <button class="z-10 font-[bold] tracking-[4px] bg-gradient-to-r from-[#FE9F02] to-[#FCDC00] px-[48px] h-[56px] rounded-full uppercase text-black">Start a project</button>
+        <button class="z-10 font-[bold] tracking-[4px] bg-gradient-to-r from-[#FE9F02] to-[#FCDC00] px-[32px] h-[56px] rounded-full uppercase text-black">Start a project</button>
+        
+        <a href="#article" class="absolute bottom-0 py-12 w-fit">
+            <img src="icons/arrow.svg" alt="arrow z-10" class="w-[120px] opacity-50 hover:opacity-100 duration-300">
+        </a>
     
     </section>
 
     <!--elevate your wow-->
-    <section class="flex flex-col items-center justify-center text-center text-white py-32 px-6 h-fit space-y-10">
+    <section id="article" class="flex flex-col items-center justify-center text-center text-white py-32 px-6 h-fit space-y-10">
         
-        <div class="max-w-[700px]">
-            <h2 class="font-bold text-[60px]">Elevate Your Wow</h2>
-            <p class="font-regular opacity-[60%] md:text-2xl leading-7 md:leading-8 tracking-wider">We partner with visionary brands and creative leaders to develop  transformative environments and experiences. Our multidisciplinary team  resolves giant-sized creative challenges using emerging technologies and  patent processes. What can we help you create?</p>
+        <div class="text-center max-w-[700px] space-y-[8px]">
+            <h2>Elevate Your Wow</h2>
+            <p class="font-regular text-[#9D9D9E] md:text-2xl leading-7 md:leading-8 tracking-wider">We partner with visionary brands and creative leaders to develop  transformative environments and experiences. Our multidisciplinary team  resolves giant-sized creative challenges using emerging technologies and  patent processes. What can we help you create?</p>
         </div>
         
         <div class="bg-[#FCDC00] h-[4px] w-[200px]"></div>
@@ -74,30 +92,41 @@
             <div class="bg-[#FCDC00] h-[400px] w-max-[400px] flex flex-auto">JEE Preparation</div>
         </div>
 
-        <button class="font-[bold] tracking-[4px] bg-gradient-to-r from-[#FE9F02] to-[#FCDC00] px-[48px] h-[56px] rounded-full uppercase text-black">Start a project</button>
+        <button class="font-[bold] tracking-[4px] bg-gradient-to-r from-[#FE9F02] to-[#FCDC00] px-[32px] h-[56px] rounded-full uppercase text-black">Start a project</button>
 
     </section>
 
     <!--clients-->
     <section class="flex flex-col items-center justify-center text-center text-white py-32 px-6 h-fit space-y-10">
         
-            <h2 class="max-w-[700px] font-bold text-[60px]">The Company We Keep</h2>
+        <h2 class="max-w-[700px] font-bold text-[60px]">The Company We Keep</h2>
         
         <div class="bg-[#FCDC00] h-[4px] w-[200px]"></div>
         
-        <div class="flex flex-wrap gap-12 items-center justify-center w-full max-w-[1024px] opacity-50 select-none">
-            <img src="icons/bridgestone.svg" alt="bridgestone logo" class="h-[36px]">
-            <img src="icons/kia.svg" alt="kia logo" class="h-[36px]">
-            <img src="icons/atnt.svg" alt="atnt logo" class="w-[144px]">
-            <img src="icons/microsoft.svg" alt="microsoft Logo" class="h-[36px]">
-            <img src="icons/publix.svg" alt="publix logo" class="h-[36px]">
-            <img src="icons/verizon.svg" alt="verizon logo" class="h-[48px]">
-            <img src="icons/abbvie.svg" alt="png logo" class="h-[40px]">
-            <img src="icons/dell.svg" alt="dell logo" class="h-[48px]">
-            <img src="icons/pepsi.svg" alt="pepsi logo" class="h-[56px]">
+        <div class="flex flex-wrap gap-12 items-center justify-center w-full max-w-[1024px] select-none">
+            <a href="#">
+                <img src="icons/bridgestone.svg" alt="bridgestone logo" class="h-[36px] opacity-50 hover:opacity-100 duration-300"></a>
+            <a href="#">
+                <img src="icons/kia.svg" alt="kia logo" class="h-[36px] opacity-50 hover:opacity-100 duration-300"></a>
+            <a href="#">
+                <img src="icons/atnt.svg" alt="atnt logo" class="w-[144px] opacity-50 hover:opacity-100 duration-300"></a>
+            <a href="#">
+                <img src="icons/microsoft.svg" alt="microsoft Logo" class="h-[36px] opacity-50 hover:opacity-100 duration-300"></a>
+            <a href="#">
+                <img src="icons/publix.svg" alt="publix logo" class="h-[36px] opacity-50 hover:opacity-100 duration-300"></a>
+            <a href="#">
+                <img src="icons/verizon.svg" alt="verizon logo" class="h-[48px] opacity-50 hover:opacity-100 duration-300">
+            <a href="#">
+                <img src="icons/abbvie.svg" alt="png logo" class="h-[40px] opacity-50 hover:opacity-100 duration-300"></a>
+            <a href="#">
+                <img src="icons/dell.svg" alt="dell logo" class="h-[48px] opacity-50 hover:opacity-100 duration-300"></a>
+            <a href="#">
+                <img src="icons/pepsi.svg" alt="pepsi logo" class="h-[56px] opacity-50 hover:opacity-100 duration-300"></a>
         </div>
 
-        <button class="font-[bold] tracking-[4px] bg-gradient-to-r from-[#FE9F02] to-[#FCDC00] px-[48px] h-[56px] rounded-full uppercase text-black">Start a project</button>
+        <div class="bg-red-400 py-12 w-fit">
+            <a href="contact.html" class="font-[bold] tracking-[4px] h-auto uppercase text-[#FCDC00] hover:text-[#ffffff] duration-300">Let's Talk</a>
+        </div>
 
     </section>
 
