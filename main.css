@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Bold';
+    src: url('BentonSans Bold.otf');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('BentonSans Regular.otf');
+ }
+
+h1 {
+    font-family: Bold, sans-serif;
+    line-height: 125%;
+    font-size: 60px;
+    line-height: 125%;
+}
+
+p {
+    font-family: Regular, sans-serif;
+    line-height: 150%;
+    font-size: 28px;
+    line-height: 150%;
+}
